@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "postgres",
-    "password": "postgres",
+    "password": "root",
     "database": "db_development_LC_DEBUG",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
-    "password": "postgres",
+    "password": "root",
     "database": "db_test_LC_DEBUG",
     "host": "127.0.0.1",
     "dialect": "postgres"

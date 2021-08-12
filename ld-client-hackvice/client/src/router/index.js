@@ -1,4 +1,4 @@
-import Vue from 'vuex'
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Detail from '../views/Detail.vue'
@@ -12,7 +12,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/detail/:id',
+    path: '/detail/:id/:author',
     name: 'Detail',
     component: Detail
   }

@@ -1,8 +1,16 @@
 'use strict';
+const {
+  Model
+} = require('sequelize');
+const bcrypt = require('bcrypt')
+
 const { hashPassword } = require('../helpers/bcrypt')
 module.exports = (sequelize, DataTypes) => {
-  const Model = sequelize.Sequelize
-  class User extends Model {}
+  class User extends Model {
+    static associate(models) {
+      this.hasMany(models.Report, { foreignKey: 'userId' })
+    }
+  }
   User.init({
     email: {
       type: DataTypes.STRING,
@@ -50,9 +58,5 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   })
-  
-  User.associate = function(models) {
-    
-  };
   return User
 };
