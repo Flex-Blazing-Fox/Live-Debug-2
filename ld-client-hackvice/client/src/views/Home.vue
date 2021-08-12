@@ -5,7 +5,7 @@
         <div class="banner">
           <h1>What can we help you with ?</h1>
           <form>
-            <input v-bind="title" type="text" placeholder="Search Help">
+            <input v-model="title" type="text" placeholder="Search Help">
             <div class="search-btn">
               <i class="fas fa-search"></i>
             </div>
@@ -20,7 +20,7 @@
     <div class="home-container">
       <div class="main-container">
         <div style="margin:2rem 0"></div>
-        <div class="card" v-for="post in posts" :key="post.id">
+        <div class="card" v-for="post in filteredPost" :key="post.id">
           <div class="card-corner">
             <img src="../assets/logo.png" alt="hacktiv8">
           </div>
@@ -57,7 +57,7 @@ export default {
   computed: {
     ...mapState(['posts']),
     filteredPost () {
-      return this.posts.filter(filterPost => filterPost.title.includes(this.title))
+      return this.posts.filter(filterPost => filterPost.title.toLowerCase().includes(this.title))
     }
   },
   methods: {
@@ -66,7 +66,7 @@ export default {
     }
   },
   created () {
-    this.$store.commit('FETCH_POSTS')
+    this.$store.dispatch('FETCH_POSTS')
   }
 }
 </script>

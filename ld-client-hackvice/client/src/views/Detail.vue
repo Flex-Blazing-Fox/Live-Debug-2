@@ -35,7 +35,7 @@
             <h3>Advice for {{ postAuthor }}</h3>
         </div>
         <div class="comment-form">
-            <form @submit="comment">
+            <form @submit.prevent="comment">
                 <textarea v-model="text" :placeholder="`advice for ${postAuthor} ...`"></textarea>
                 <div class="send-btn">
                     <input v-model="senderName" type="text" placeholder="your name">
@@ -78,7 +78,6 @@ export default {
       const payload = {
         id: this.$route.params.id,
         comments: this.post.comments
-
       }
 
       payload.comments.push({
@@ -97,7 +96,7 @@ export default {
     }
   },
   created () {
-    this.postAuthor = this.$router.param.author
+    this.postAuthor = this.$route.params.author
     this.$store.dispatch('FETCH_DETAIL', this.$route.params.id)
       .then(({ data }) => {
         this.post = data

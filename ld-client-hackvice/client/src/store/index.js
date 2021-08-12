@@ -9,12 +9,12 @@ export default new Vuex.Store({
     posts: []
   },
   mutations: {
-    fetch_posts ({state}, payload) {
+    fetch_posts (state, payload) {
       state.posts = payload
     }
   },
   actions: {
-    FETCH_POSTS ( commit , payload) {
+    FETCH_POSTS ({ commit }, payload) {
       axios({
         method: 'get',
         url: '/posts'
@@ -26,13 +26,13 @@ export default new Vuex.Store({
           console.log(err, 'errrorr')
         })
     },
-    FETCH_DETAIL ( commit , payload) {
+    FETCH_DETAIL ({ commit }, payload) {
       return axios({
         method: 'get',
         url: `/posts/${payload}`
       })
     },
-    ADD_COMMENT ( commit , payload) {
+    ADD_COMMENT ({ commit }, payload) {
       return axios({
         method: 'PATCH',
         url: `/posts/${payload.id}`,

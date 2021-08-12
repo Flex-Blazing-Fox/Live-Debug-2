@@ -13,6 +13,14 @@
         {
           "name": "ziady",
           "text": "gak masalah kok, all color is beautiful"
+        },
+        {
+          "name": "ari",
+          "text": "testing"
+        },
+        {
+          "name": "arjuna",
+          "text": "testing2"
         }
       ]
     },
@@ -25,44 +33,56 @@
         {
           "name": "Isro",
           "text": "Belum tentu bang, tapi kalau ada orang dalam sih pasti aman"
+        },
+        {
+          "name": "Arjun",
+          "text": "suka gabut"
+        },
+        {
+          "name": "ari",
+          "text": "mending jadi ..."
         }
       ]
     },
     {
-        "id": 3,
-        "title": "Suka Lupa",
-        "description": "Sekolah berangkan bawa motor, pulang nya naik angkot. gimana sih biar bisa fokus?",
-        "author": "Isro",
-        "comments": [
-          {
-            "name": "Iam",
-            "text": "Coba minum aqua bang, dulu saya juga gitu. skarang udah gak lagi"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Berat Kepala",
-        "description": "Abis pergi jauh make helm trus pulang, nyampe kos langsung tidur, pas bangun tidur kepala berat banget. Ternyata baru sadar kalau tidur masih pake helm",
-        "author": "Adiel",
-        "comments": [
-          {
-            "name": "Ziady",
-            "text": "Kalau bisa sebelum bobo cuci muka dulu biar fokus bang"
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Polisi",
-        "description": "Apa bener kalo kita lama-lama di penjara , kita bisa jadi polisi ?",
-        "author": "ziady",
-        "comments": [
-          {
-            "name": "Adiel",
-            "text": "Mending jadi polisi tidur aja bro"
-          }
-        ]
-      }
+      "id": 3,
+      "title": "Suka Lupa",
+      "description": "Sekolah berangkan bawa motor, pulang nya naik angkot. gimana sih biar bisa fokus?",
+      "author": "Isro",
+      "comments": [
+        {
+          "name": "Iam",
+          "text": "Coba minum aqua bang, dulu saya juga gitu. skarang udah gak lagi"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Berat Kepala",
+      "description": "Abis pergi jauh make helm trus pulang, nyampe kos langsung tidur, pas bangun tidur kepala berat banget. Ternyata baru sadar kalau tidur masih pake helm",
+      "author": "Adiel",
+      "comments": [
+        {
+          "name": "Ziady",
+          "text": "Kalau bisa sebelum bobo cuci muka dulu biar fokus bang"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Polisi",
+      "description": "Apa bener kalo kita lama-lama di penjara , kita bisa jadi polisi ?",
+      "author": "ziady",
+      "comments": [
+        {
+          "name": "Adiel",
+          "text": "Mending jadi polisi tidur aja bro"
+        },
+        {
+          "name": "ari",
+          "text": "polisi gendut"
+        }
+      ]
+    }
   ]
 }

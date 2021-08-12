@@ -5,7 +5,8 @@ class ReportController {
         let { description, location } = req.body
         Report.create({
             description,
-            location
+            location,
+            userId: req.loggedUser.id
         })
             .then(data => {
                 res.status(201).json({
@@ -16,13 +17,14 @@ class ReportController {
     }
 
     static delete (req,res,next) {
-        Report.findOne(req.params.id)
+        Report.findByPk(req.params.reportId)
         .then((data) => {
           if (!data) {
             return res.status(400).json({ message: 'Data Not Found' });
           }
+          console.log(data)
     
-          data.destroy()
+          Report.destroy({ where: { id: req.params.reportId } })
             .then(() => {
               return res.status(200).json({ message: 'Successfully delete data' })
             })
