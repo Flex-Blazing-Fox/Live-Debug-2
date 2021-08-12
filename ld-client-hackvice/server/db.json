@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Body Shaming",
+      "description": "Kalau nyebut orang item itu body-shaming, kok nyebut orang putih enggak ya ? Padahal kan sama-sama warna",
+      "author": "Arnold",
+      "comments": [
+        {
+          "name": "Adiel",
+          "text": "sebaiknya lebih bijak dalam berkata kata"
+        },
+        {
+          "name": "ziady",
+          "text": "gak masalah kok, all color is beautiful"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pegawai Negeri Sipil",
+      "description": "Teman teman, kalau kita pingsan di depan para PNS , apakah kita akan diangkat PNS ?",
+      "author": "Iam",
+      "comments": [
+        {
+          "name": "Isro",
+          "text": "Belum tentu bang, tapi kalau ada orang dalam sih pasti aman"
+        }
+      ]
+    },
+    {
+        "id": 3,
+        "title": "Suka Lupa",
+        "description": "Sekolah berangkan bawa motor, pulang nya naik angkot. gimana sih biar bisa fokus?",
+        "author": "Isro",
+        "comments": [
+          {
+            "name": "Iam",
+            "text": "Coba minum aqua bang, dulu saya juga gitu. skarang udah gak lagi"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Berat Kepala",
+        "description": "Abis pergi jauh make helm trus pulang, nyampe kos langsung tidur, pas bangun tidur kepala berat banget. Ternyata baru sadar kalau tidur masih pake helm",
+        "author": "Adiel",
+        "comments": [
+          {
+            "name": "Ziady",
+            "text": "Kalau bisa sebelum bobo cuci muka dulu biar fokus bang"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Polisi",
+        "description": "Apa bener kalo kita lama-lama di penjara , kita bisa jadi polisi ?",
+        "author": "ziady",
+        "comments": [
+          {
+            "name": "Adiel",
+            "text": "Mending jadi polisi tidur aja bro"
+          }
+        ]
+      }
+  ]
+}
